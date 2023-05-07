@@ -17,7 +17,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 16px;
   background-color: #a8c7f3;
-  border: 1px solid #e2e1e1;
+  border: 4px solid #e2e1e1;
   border-radius: 4px;
 `;
 
