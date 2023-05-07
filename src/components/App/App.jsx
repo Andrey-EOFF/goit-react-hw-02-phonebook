@@ -3,6 +3,7 @@ import { nanoid } from 'nanoid';
 import ContactList from 'components/ContactList/ContactList';
 import ContactForm from 'components/ContactForm/ContactForm';
 import Filter from 'components/Filter/Filter';
+import { Title, SubTitle, Container } from './App.styled';
 
 class App extends Component {
   state = {
@@ -63,18 +64,18 @@ class App extends Component {
     const visibleContacts = this.getVisibleContacts();
 
     return (
-      <>
-        <h1>Phonebook</h1>
+      <Container>
+        <Title>Phonebook</Title>
         <ContactForm onSubmit={this.addContact} />
 
         <Filter value={filter} onChange={this.changeFilter} />
 
-        <h2>Contacts</h2>
+        <SubTitle>Contacts</SubTitle>
         <ContactList
           contacts={visibleContacts}
           onDeleteContact={this.deletContact}
         />
-      </>
+      </Container>
     );
   }
 }

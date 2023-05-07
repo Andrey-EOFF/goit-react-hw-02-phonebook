@@ -1,10 +1,11 @@
 import React from 'react';
+import { FilterContainer, FilterInput } from './Filter.styled'
 
 const Filter = ({ value, onChange }) => (
-  <label htmlFor="">
+  <FilterContainer  htmlFor="">
     Finde coctacts by name
-    <input type="text" value={value} onChange={onChange} />
-  </label>
+    <FilterInput type="text" value={value} onChange={onChange} />
+  </FilterContainer>
 );
 
 export default Filter;
