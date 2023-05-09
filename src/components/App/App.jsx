@@ -89,10 +89,6 @@ App.propTypes = {
       number: PropTypes.string.isRequired,
     })
   ),
-  filter: PropTypes.string.isRequired,
-  addContact: PropTypes.func.isRequired,
-  deleteContact: PropTypes.func.isRequired,
-  changeFilter: PropTypes.func.isRequired,
 };
 
 export default App;
